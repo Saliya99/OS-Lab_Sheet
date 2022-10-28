@@ -30,3 +30,17 @@ void *th1()
 
 }
 
+void *th2()
+{
+	int temp=arr[0];
+	for(int i=1;i<n;i++)
+	{
+		if(temp>arr[i])
+		{
+			temp=arr[i];
+		}
+	}
+	printf("\nThe Minimum is:=%d",temp);
+
+}
+
