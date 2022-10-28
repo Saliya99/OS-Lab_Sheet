@@ -15,6 +15,7 @@ void *th()
 	printf("The average is:%f",average);
 }
 
+void *th1()
 {
 
 	int temp=arr[0];
@@ -28,3 +29,4 @@ void *th()
 	printf("\nThe Maximum is:=%d",temp);
 
 }
+
