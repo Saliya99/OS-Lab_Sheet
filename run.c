@@ -1,12 +1,19 @@
 #include<stdio.h>
 #include<pthread.h>
-
 int arr[9],n=10,i;
 
 void *th()
 {	
 	int sum=0;
 	float average;
+/*	printf("enter your number :=");
+	scanf("%d",&n);
+	
+
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}*/
 	for(i=0;i<n;i++)
 		{
 			sum=sum+arr[i];
@@ -14,7 +21,6 @@ void *th()
 	average=sum/n;
 	printf("The average is:%f",average);
 }
-
 void *th1()
 {
 
@@ -29,7 +35,6 @@ void *th1()
 	printf("\nThe Maximum is:=%d",temp);
 
 }
-
 void *th2()
 {
 	int temp=arr[0];
@@ -43,7 +48,7 @@ void *th2()
 	printf("\nThe Minimum is:=%d",temp);
 
 }
-
+	
 int main()
 {
 int n,i=0;
