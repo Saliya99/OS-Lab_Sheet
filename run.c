@@ -15,3 +15,16 @@ void *th()
 	printf("The average is:%f",average);
 }
 
+{
+
+	int temp=arr[0];
+	for(int i=1;i<=n;i++)
+	{
+		if(temp<arr[i])
+		{
+			temp=arr[i];
+		}
+	}
+	printf("\nThe Maximum is:=%d",temp);
+
+}
